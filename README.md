@@ -1,2 +1,3 @@
-# rotating-cube
-Using Html &amp; Css .
+# Rotating-Cube
+Using Html &amp; Css.<br>
+Transform, Animation propeties.
