@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://www.freeiconspng.com/uploads/3d-cube-logo-15.png">
+    <title>Cube</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        user-select: none;
+
+    }
+
+    :root {
+        --variable: 0deg;
+    }
+
+
+    html {
+        background-color: black;
+        font-size: 25px;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transform-style: preserve-3d;
+        animation: rotation 5s linear 1s infinite;
+
+    }
+
+
+    .box {
+        position: absolute;
+        height: 10rem;
+        width: 10rem;
+        border: 0.2rem solid white;
+        text-align: center;
+        align-content: center;
+
+    }
+
+    .front {
+        transform: translateZ(5rem);
+        background-color: yellow;
+    }
+
+    .bottom {
+        transform: rotateX(-90deg) translateZ(5rem);
+        background-color: green;
+    }
+
+    .left {
+        transform: rotateY(-90deg) translateZ(5rem);
+        background-color: orange;
+    }
+
+    .back {
+        transform: rotateY(180deg) translateZ(5rem);
+        background-color: white;
+    }
+
+    .right {
+        transform: rotateY(90deg) translateZ(5rem);
+        background-color: red;
+    }
+
+    .top {
+        transform: rotateX(90deg) translateZ(5rem);
+        background-color: blue;
+    }
+
+
+    @keyframes rotation {
+        0% {
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+
+        16.67% {
+            transform: rotateY(90deg);
+        }
+
+        33.3% {
+            transform: rotateX(90deg);
+        }
+
+        50% {
+            transform: rotateY(180deg);
+        }
+
+        66.67% {
+            transform: rotateY(270deg);
+        }
+
+        83.35% {
+            transform: rotateX(-90deg)
+        }
+
+        100% {
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+
+    }
+</style>
+
+<body>
+    <div class="container">
+
+
+        <div class="box front">front</div>
+        <div class="box bottom">bottom</div>
+        <div class="box left">left</div>
+        <div class="box back">back</div>
+        <div class="box right">right</div>
+        <div class="box top">top</div>
+
+    </div>
+
+
+
+</body>
+
+</html>
