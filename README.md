@@ -1,3 +1,3 @@
 # Rotating-Cube
 Using Html &amp; Css.<br>
-Transform, Animation propeties.
+Transform, Animation properties.
